@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en ">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog Lite</title>
+      <link rel="stylesheet" href="/index.3b8cdc40.css">
+      <link rel="icon" href="/logo-sm.bb132471.png">
+
+      <!-- FONT -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+JP:wght@200..900&family=Prata&display=swap" rel="stylesheet">
+
+      <!-- PARAGRAPH FONT  -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+      <!-- ICONS -->
+      <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer=""></script>
+      <script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   </head>
+
+   <body class="relative grid min-h-screen text-xl text-slate-700 dark:bg-slate-500">
+      <!--==  HEADER  ==-->
+
+      <header>
+         <div class="relative lg:flex lg:flex-col bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-800 dark:from-0% dark:via-slate-700 dark:via-[percentage:35%_65%] dark:to-slate-800 dark:to-100%">
+
+            <!-- BOOKMARKS -->
+
+            <div class="relative">
+               <button class="dropdown-btn absolute transition flex gap-1 top-0 left-0 m-10 mt-[44px] ml-20 lg:ml-5 lg:mt-5 md:ml-4 md:mt-3 sm:mt-1 sm:ml-5 hover:brightness-50 hover:dark:brightness-150">
+                  <img class="w-10 brightness-75 lg:w-9 md:w-12 md:h-12 sm:w-10 sm:h-10 sm:brightness-90 sm:dark:brightness-75" src="/bookmark.30993d55.png" alt="">
+                  <span class="text-3xl lg:text-2xl text-slate-500 dark:text-slate-400 md:hidden">Bookmarks</span>
+               </button>
+
+               <!-- Bookmark content -->
+
+               <div class="absolute z-10 flex flex-col invisible w-5/12 gap-4 transition-all duration-300 opacity-0 pointer-events-none bookmark-container top-32 left-20 h-min 2xl:w-1/2 xl:w-2/3 lg:w-3/4 md:w-full md:left-0 sm:top-24">
+                  <div class="bookmark-parent"></div>
+               </div>
+            </div>
+
+            <!-- LOGO -->
+
+            <div class="flex justify-center py-6 xl:py-6 lg:order-1 lg:pt-0 md:pt-4 md:pb-8 sm:pb-4 sm:pt-1">
+               <div class="flex items-center gap-5 sm:gap-2">
+                  <img class="w-20 dark:contrast-50 sm:w-12 sm:pt-2" src="/logo.726d37a8.png" alt="">
+                  <span class="text-5xl sm:text-4xl font-black text-slate-800 bg-gradient-to-r from-[#475569] to-[#7a75aa] dark:from-white dark:to-[#bdbad5]" style="-webkit-text-fill-color: transparent; background-clip: text">19th century</span>
+               </div>
+            </div>
+            
+            <!-- Dark mode btn -->
+
+            <div class="absolute top-0 right-0 flex items-center gap-10 p-10 pt-[51px] pr-20 text-2xl lg:static lg:self-end lg:p-6 lg:pb-0 lg:opacity-50 sm:pt-3">
+               <div class="flex gap-3">
+                  <ion-icon class="cursor-auto dark:text-slate-300" name="sunny-outline"></ion-icon>
+
+                  <button id="dark-mode" class="relative w-12 h-6 transition rounded-full cursor-pointer bg-slate-500 hover:bg-slate-400 dark:bg-slate-400 dark:hover:bg-slate-300">
+                     <span id="dot" class="absolute w-4 h-4 transition duration-300 rounded-full top-1 left-1 bg-slate-50 dark:bg-slate-600"></span>
+                  </button>
+
+                  <ion-icon class="cursor-auto lg:hidden dark:text-slate-300" name="moon-outline"></ion-icon>
+               </div>
+            </div>
+         </div>
+
+         <div class="h-[1px] bg-gradient-to-r from-white from-0% via-[#cbd5e1] via-[percentage:35%_65%] to-white to-100% dark:from-slate-800 dark:via-[#6a6880] dark:to-slate-800"></div>
+
+         <!--= NAVIGATION =-->
+
+         <nav class="flex justify-center gap-5 text-slate-600 bg-gradient-to-r from-[#f1f5f9] via-[#edf1f5] to-[#f1f5f9] dark:from-slate-700 dark:from-0% dark:via-slate-700 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
+            <div class="absolute transition duration-700 bg-transparent"></div>
+            <a class="py-4 transition duration-200 border-b-2 border-transparent sm:py-2 hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="#">Home</a>
+            <span class="py-4 sm:py-2">/</span>
+            <a class="py-4 transition duration-200 border-b-2 border-transparent sm:py-2 hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="/src/pages/about.html">About</a>
+         </nav>
+      </header>
+
+      <!--==  ARTICLES  ==-->
+
+      <main class="grid self-start pt-10 main sm:pt-6">
+         <!-- ADD POST BTN -->
+
+         <div id="btn-parent" class="flex justify-center">
+            <button href="addpost.html" id="add-btn" class="px-6 py-4 pb-5 text-4xl transition rounded-full cursor-pointer pr-7 text-slate-500 sm:text-3xl sm:pt-3 sm:pb-4 sm:pl-5 sm:pr-6 dark:text-slate-700 dark:bg-slate-400 bg-slate-200 dark:hover:bg-slate-800 dark:hover:text-slate-200 hover:text-slate-500 hover:shadow-md hover:bg-slate-50">
+               + Add new post
+            </button>
+         </div>
+
+         <!-- ERROR MSG -->
+
+         <div id="message" class="flex flex-col items-center w-2/5 2xl:w-3/5 lg:w-4/5 md:w-5/6 gap-4 py-10 px-8 rounded-xl mt-24 sm:mt-16 bg-slate-100 dark:bg-[#8593a6] justify-self-center text-center">
+            <span class="text-3xl text-slate-500 dark:text-slate-700">There are no articles here, why not write one?</span>
+            <img class="w-16 opacity-50" src="/signature.3ad47891.png" alt="">
+         </div>
+
+         <!-- MODAL -->
+
+         <section id="modal" class="absolute top-0 left-0 z-10 flex justify-center invisible w-full h-full pt-12 opacity-0 pointer-events-none 2xl:pt-8 xl:pt-20 lg:pt-8 md:pt-24 sm:pt-6 backdrop-blur-xl" style="background-color: #d4dae360; transition: all .4s">
+            <form id="modal-content" class="relative flex flex-col w-5/12 gap-6 p-16 px-20 pt-20 sm:gap-4 2xl:p-12 lg:pt-12 lg:pb-10 lg:px-16 md:py-16 sm:px-8 sm:py-10 sm:pb-8 h-min bg-gradient-to-l from-slate-100 to-slate-300 dark:from-slate-600 dark:to-slate-700 2xl:w-2/5 xl:w-2/4 lg:w-2/3 md:w-4/5 sm:w-11/12">
+
+               <span id="exit-modal-btn" class="absolute h-20 text-5xl transition opacity-75 cursor-pointer top-4 right-5 text-slate-400 hover:text-slate-500 2xl:top-2 2xl:right-3 sm:text-4xl sm:top-1 sm:right-1"><ion-icon name="close-outline"></ion-icon></span>
+
+               <!-- Heading -->
+
+               <div class="flex flex-col gap-4 pb-2">
+                  <h2 class="text-6xl 2xl:text-6xl lg:text-5xl sm:text-4xl text-center font-bold dark:text-slate-100 bg-gradient-to-r from-slate-500 to-[#7a75aa] dark:from-white dark:to-[#bdbad5]" style="-webkit-text-fill-color: transparent; background-clip: text">
+                     Create an article
+                  </h2>
+
+                  <div class="w-full md:w-2/3 sm:w-full h-[2px] mx-auto bg-gradient-to-r from-[#CFD8E3] via-violet to-[#EEF2F7] dark:from-[#354357] dark:via-violet dark:to-[#455367]"></div>
+               </div>
+
+               <!-- Input fields -->
+
+               <div class="flex flex-col gap-8 mb-2 text-2xl font-medium sm:text-xl sm:gap-6 xl:gap-6 md:gap-8 text-slate-500 dark:text-slate-200">
+                  <div class="flex flex-col gap-2">
+                     <span>Title</span>
+                      
+                     <input id="title" class="pl-2 rounded-md text-slate-600 input-element" type="text" name="title" required="">
+                  </div>
+
+                  <div class="flex flex-col gap-2 rounded-md">
+                     <span>Description</span>
+                     <input id="description" class="pl-2 rounded-md text-slate-600 input-element" type="text" name="description" required="">
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                     <span>Image (insert URL)</span>
+                     <input id="image" class="pl-2 rounded-md text-slate-600 input-element" name="imageURL" required="">
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                     <span>Content</span>
+                     <textarea id="content" class="h-24 pl-2 rounded-md sm:h-16 text-slate-600 input-element" name="content" required=""></textarea>
+                  </div>
+               </div>
+
+               <!-- Buttons -->
+
+               <div class="flex items-center justify-center gap-4 mt-8 text-3xl 2xl:mt-4 lg:mt-0 md:mt-8 sm:mb-2 sm:mt-2">
+                  <div class="rounded-full text-slate-500 bg-gradient-to-r from-slate-400 to-violet">
+                     <button class="px-10 py-4 pb-[23px] text-5xl sm:text-4xl rounded-full bg-neutral-50 hover:text-white hover:bg-gradient-to-r hover:from-slate-400 hover:to-violet dark:text-white dark:bg-gradient-to-r dark:from-slate-400 dark:to-violet dark:hover:from-white dark:hover:to-white dark:hover:text-slate-600  sm:px-8 sm:py-3 sm:pb-[17px] shadow-md">
+                        Publish
+                     </button>
+                  </div>
+               </div>
+            
+         </form></section>
+      </main>
+
+      <!--==  FOOTER  ==-->
+
+      <footer class="self-end">
+         <div class="mt-32 text-center bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-700 dark:from-0% dark:via-slate-600 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
+            <!-- Logo -->
+
+            <div class="flex items-center justify-center gap-3 py-10 pt-14">
+               <img class="w-14 dark:contrast-50" src="/logo.726d37a8.png" alt="">
+               <span class="text-4xl font-black text-slate-600 bg-gradient-to-r from-[#475569] to-[#7a75aa] dark:from-white dark:to-[#bdbad5]" style="-webkit-text-fill-color: transparent; background-clip: text">19th century</span>
+            </div>
+
+            <div class="w-2/5 md:w-2/3 sm:w-11/12 h-[1px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-slate-600 dark:via-violet dark:to-slate-600"></div>
+
+            <div class="flex justify-center w-2/6 gap-4 py-4 mx-auto">
+               <a class="hover:text-slate-400" href="#">Home</a>
+               <span>/</span>
+               <a class="hover:text-slate-400" href="/src/pages/about.html">About</a>
+            </div>
+
+            <div class="w-2/5 md:w-2/3 sm:w-11/12 h-[1px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-slate-600 dark:via-violet dark:to-slate-600"></div>
+
+            <div class="pt-16 pb-10">
+               <span>Copyright ©2024. All rights reserved. </span>
+               <span>Project for portfolio. </span>
+            </div>
+         </div>
+      </footer>
+      <script src="/index.e37f48ea.js" defer=""></script>
+   </body>
+</html>

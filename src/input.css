@@ -1,0 +1,23 @@
+@tailwind base;
+
+@layer base {
+   html {
+      font-family: 'Cormorant SC', serif;
+   }
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+   .active {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+   }
+
+   .dropdown-active {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+   }
+}
