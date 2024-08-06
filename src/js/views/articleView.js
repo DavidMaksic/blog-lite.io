@@ -85,7 +85,7 @@ class ArticleView extends View {
 
             <img class="delete-img"  src="${data.imageURL}" alt="">
 
-            <p class="delete-p text-3xl text-justify sm:leading-7 whitespace-pre-line text-slate-600 dark:text-slate-100 sm:text-xl sm:text-slate-700" style="font-family: 'Cormorant Garamond', serif;">${data.content}
+            <p class="delete-p text-3xl text-justify sm:leading-[1.7rem] whitespace-pre-line text-slate-600 dark:text-slate-100 sm:text-xl sm:text-slate-700" style="font-family: 'Cormorant Garamond', serif;">${data.content}
             </p>
 
             <div

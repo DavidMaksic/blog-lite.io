@@ -2012,7 +2012,55 @@ html {
     line-height: 1.75rem;
   }
 
+  .sm\:leading-5 {
+    line-height: 1.25rem;
+  }
+
+  .sm\:leading-3 {
+    line-height: .75rem;
+  }
+
+  .sm\:leading-10 {
+    line-height: 2.5rem;
+  }
+
+  .sm\:leading-6 {
+    line-height: 1.5rem;
+  }
+
   .sm\:leading-7 {
+    line-height: 1.75rem;
+  }
+
+  .sm\:leading-\[1\.6rem\] {
+    line-height: 1.6rem;
+  }
+
+  .sm\:leading-\[2rem\] {
+    line-height: 2rem;
+  }
+
+  .sm\:leading-\[1\.65rem\] {
+    line-height: 1.65rem;
+  }
+
+  .sm\:leading-\[1\.70rem\] {
+    line-height: 1.70rem;
+  }
+
+  .sm\:leading-\[1\.68rem\] {
+    line-height: 1.68rem;
+  }
+
+  .sm\:leading-\[1\.69rem\] {
+    line-height: 1.69rem;
+  }
+
+  .sm\:leading-\[1\.7rem\] {
+    line-height: 1.7rem;
+  }
+
+  .sm\:leading-\[1\.75rem\] {
     line-height: 1.75rem;
   }
 
