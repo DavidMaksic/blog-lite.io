@@ -72,8 +72,8 @@ class ArticleView extends View {
             </div>
 
             <div id="bookmarks" class="bookmarks absolute top-[-9px] right-6 2xl:top-[-10px] md:right-10 sm:top-[-9px] sm:right-1">
-               <img class="bookmark-thin cursor-pointer w-14 h-14 2xl:w-16 2xl:h-16 sm:w-14 sm:h-14" src="../../src/img/bookmark.png" alt="">
-               <img class="bookmark-full hidden cursor-pointer w-14 h-14 2xl:w-16 2xl:h-16 sm:w-14 sm:h-14" src="../../src/img/bookmark-filled.png" alt="">
+               <img class="bookmark-thin cursor-pointer w-14 h-14 2xl:w-16 2xl:h-16 sm:w-14 sm:h-14" src="././src/img/bookmark.png" alt="">
+               <img class="bookmark-full hidden cursor-pointer w-14 h-14 2xl:w-16 2xl:h-16 sm:w-14 sm:h-14" src="././src/img/bookmark-filled.png" alt="">
             </div>
             
             <div
